@@ -17,7 +17,6 @@ class TaskController extends Controller
             ->with('category')
             ->orderBy('due_date', 'asc')
             ->paginate(10);
-
         return response()->json($tasks);
     }
 
