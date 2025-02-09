@@ -44,14 +44,16 @@ import api from '../axios.js'
     export default {
         data() {
             return {
-                email: "amy10@gmail.com",
-                password: "Angelo12345",
+                email: null,
+                password: null,
                 error: "",
             };
         },
         methods: {
-            async login() {
-                const {data } = await api.post("http://localhost:8000/api/login", {
+            async login(event) {
+                event.preventDefault();
+
+                const {data } = await api.post("/login", {
                     email: this.email,
                     password: this.password
                 });
