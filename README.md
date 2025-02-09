@@ -3,6 +3,8 @@ Overview
 
 This project implements a simple task management system with user authentication. The frontend is built using Vue.js and styled with TailwindCSS. The application provides features for logging in and managing tasks (CRUD operations) where users can create, read, update, and delete tasks. Authentication is handled via JWT tokens.
 
+![screencapture-localhost-8080-2025-02-09-17_01_23](https://github.com/user-attachments/assets/c51de05d-3aa9-4827-827a-63403e0e8a2f)
+
 Features
 --------
 
